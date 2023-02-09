@@ -68,4 +68,4 @@ class GetChessInfo:
             af.write(f'time : {datetime.datetime.now} \n')
             for info in data:
                 af.write(f'{index}) {str(info)} \n')
-                af.close()        
+            af.close() 
