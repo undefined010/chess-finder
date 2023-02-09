@@ -63,9 +63,10 @@ class GetChessInfo:
         if data == None:
             print(clr.RED + 'No data')
             
-        with open(f'{fname}.txt','a+') as af:
-            index += 1
+        with open(f'output/{fname}.txt','a+') as af:
+            
             af.write(f'time : {datetime.datetime.now} \n')
             for info in data:
+                index += 1
                 af.write(f'{index}) {str(info)} \n')
             af.close() 
